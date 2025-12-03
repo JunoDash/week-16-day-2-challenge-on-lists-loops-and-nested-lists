@@ -25,12 +25,25 @@
 # - Item requested  
 # - Quantity requested  
 
+names = []
+items = []
+quantity = []
+
+for i in range(3):
+  names.append(input("Enter your name: "))
+  items.append(input("Enter your item: "))
+  quantity.append(int(input("Enter the quanity of item: ")))
+
+requests = [names, items, quantity]
+
 # ---
 
 # ### 2. Identify Key Information
 # From your collection:
 # - Identify the **first student’s name**
+print(requests[0][0])
 # - Identify the **last student’s requested item only**
+  print(])
 
 # ---
 
@@ -88,10 +101,3 @@
 
 # Instructor: Marvin Evins  
 # Course:  AP Computer Science Principles 
-
-name = input("What is your name? ")
-items = input("What items are you requesting? ")
-quantity = int(input("What quantites of items are you requesting? "))
-
-requests = []
-requests.append(name, items, quantity)
