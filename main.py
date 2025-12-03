@@ -25,16 +25,9 @@
 # - Item requested  
 # - Quantity requested  
 
-names = []
-items = []
-quantity = []
-
-for i in range(3):
-  names.append(input("Enter your name: "))
-  items.append(input("Enter your item: "))
-  quantity.append(int(input("Enter the quanity of item: ")))
-
-requests = [names, items, quantity]
+requests = [["John", "Penicl", 20],
+            ["Luis", "Notebook", 2],
+            ["Carlos", "Binder", 5]]
 
 # ---
 
@@ -43,13 +36,13 @@ requests = [names, items, quantity]
 # - Identify the **first student’s name**
 print(requests[0][0])
 # - Identify the **last student’s requested item only**
-  print(])
-
+print(requests[2][2])
 # ---
 
 # ### 3. Quantity Extraction
 # Create a **separate list that contains only the quantities requested** by the students.
-
+for row in requests:
+    print(row[2])
 # ---
 
 # ### 4. Order Size Analysis
