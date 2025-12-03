@@ -41,8 +41,10 @@ print(requests[2][2])
 
 # ### 3. Quantity Extraction
 # Create a **separate list that contains only the quantities requested** by the students.
+quantities = []
 for row in requests:
-    print(row[2])
+    quantities.append(row[2])
+print(quantities)
 # ---
 
 # ### 4. Order Size Analysis
@@ -51,7 +53,11 @@ for row in requests:
 #   “Large order detected!”
 # - Otherwise label the order:
 #   “Orders within normal limits.”
-
+for i in range(len(quantities)):
+    if quantities[i] > 5:
+        print("Large order detected!")
+    else:
+        print("Orders within normal limits.")
 # ---
 
 # ### 5. Quantity Organization
