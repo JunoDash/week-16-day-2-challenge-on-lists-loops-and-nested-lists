@@ -78,10 +78,6 @@ Answer the following:
 
 ---
 
-## Submission Requirements
-- All answers must be written in words and/or tables.
-- No programming code may be used.
-- Show clear reasoning for each response.
 
 ---
 
