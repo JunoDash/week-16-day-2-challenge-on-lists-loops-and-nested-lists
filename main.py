@@ -24,19 +24,18 @@
 # - Student name  
 # - Item requested  
 # - Quantity requested  
-
-requests = [["John", "Penicl", 20],
-            ["Luis", "Notebook", 2],
-            ["Carlos", "Binder", 5]]
-
+order_1 = [input("Enter your name: "), input("Enter item requested: "), int(input("Enter number of item: "))]
+order_2 = [input("Enter your name: "), input("Enter item requested: "), int(input("Enter number of item: "))]
+order_3 = [input("Enter your name: "), input("Enter item requested: "), int(input("Enter number of item: "))]
+requests =  [order_1, order_2, order_3]
 # ---
 
 # ### 2. Identify Key Information
 # From your collection:
 # - Identify the **first student’s name**
-print(requests[0][0])
+print("First students name:", requests[0][0])
 # - Identify the **last student’s requested item only**
-print(requests[2][2])
+print("Last students name:", requests[2][2])
 # ---
 
 # ### 3. Quantity Extraction
@@ -44,7 +43,7 @@ print(requests[2][2])
 quantities = []
 for row in requests:
     quantities.append(row[2])
-print(quantities)
+print("Quantities:", quantities)
 # ---
 
 # ### 4. Order Size Analysis
@@ -62,7 +61,8 @@ for i in range(len(quantities)):
 
 # ### 5. Quantity Organization
 # Re-organize the quantity list from **smallest to largest** and display the final result.
-
+quantities.sort()
+print(quantities)
 # ---
 
 # ## Challenge Extension: Classroom Storage Grid
